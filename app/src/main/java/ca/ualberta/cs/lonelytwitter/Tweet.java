@@ -51,8 +51,8 @@ public abstract class Tweet {
         return currentMoods;
     }
     
-    public void addcurrentMood(currentMood currentmood) {
-        this.currentMoods.add(currentmood);
+    public void addcurrentMood(currentMood currentMoods) {
+        this.currentMoods.add(currentMoods);
     }
         
     public void setMoods(ArrayList<Mood> currentMoods) {
