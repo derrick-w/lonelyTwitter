@@ -47,16 +47,16 @@ public abstract class Tweet {
         this.date = date;
     }
     
-    public ArrayList<currentMoods> getcurrentMoods() {
-        return currentMoods;
+    public ArrayList<currentMood> getcurrentMood() {
+        return currentMood;
     }
     
-    public void addcurrentMood(currentMood currentMoods) {
-        this.currentMoods.add(currentMoods);
+    public void addcurrentMood(currentMood currentMood) {
+        this.currentMood.add(currentMood);
     }
         
-    public void setMoods(ArrayList<Mood> currentMoods) {
-        this.currentMoods = currentMoods;
+    public void setcurrentMood(ArrayList<Mood> currentMood) {
+        this.currentMood = currentMood;
     }
 
 }
