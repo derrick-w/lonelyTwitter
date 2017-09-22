@@ -46,17 +46,22 @@ public abstract class Tweet {
     public void setDate(Date date) {
         this.date = date;
     }
-    
-    public ArrayList<currentMood> getcurrentMood() {
-        return currentMood;
+
+    @Override
+    public String toString(){
+        return date.toString() + " | " + message;
     }
     
-    public void addcurrentMood(currentMood currentMood) {
-        this.currentMood.add(currentMood);
-    }
-        
-    public void setcurrentMood(ArrayList<Mood> currentMood) {
-        this.currentMood = currentMood;
-    }
+//    public ArrayList<currentMood> getcurrentMood() {
+//        return currentMood;
+//    }
+//
+//    public void addcurrentMood(currentMood currentMood) {
+//        this.currentMood.add(currentMood);
+//    }
+//
+//    public void setcurrentMood(ArrayList<Mood> currentMood) {
+//        this.currentMood = currentMood;
+//    }
 
 }
