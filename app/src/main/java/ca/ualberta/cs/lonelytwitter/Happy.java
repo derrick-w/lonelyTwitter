@@ -1,33 +1,45 @@
 /*
- * Class Name: ImportantTweet
+ * Class Name: Happy
  * Version: Version 1.0
  * Date: September 28, 2017
  * Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  * You may use, distribute, or modify this code under terms and conditions of the
  * Code of Students Behaviour at University of Alberta
-*/
+ */
 
 package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
 /**
- * Designates tweet as important
+ * Happy Mood for tweets
  * @author dwai
  * @version 1.0
  * @since 1.0
- *
+ * @see Mood
  */
 
-public class ImportantTweet extends Tweet {
-    public ImportantTweet(String message){
-        super(message);
+public class Happy extends Mood {
+    /**
+     * Does nothing for now...
+     */
+    public Happy() {
     }
-    public ImportantTweet(String message, Date date){
-        super(message, date);
+
+    /**
+     * Does nothing for now...
+     * @param date
+     */
+    public Happy(Date date) {
+        super(date);
     }
+
+    /**
+     * Custom string for Happy Mood
+     * @return string
+     */
     @Override
-    public Boolean isImportant(){
-        return Boolean.TRUE;
+    public String toString() {
+        return "I am happy XD";
     }
 }
