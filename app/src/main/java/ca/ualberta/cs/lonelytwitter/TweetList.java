@@ -11,7 +11,6 @@ import java.util.Comparator;
 public class TweetList {
 
     private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
-    private ArrayList<Tweet> tweetsTest = new ArrayList<Tweet>();
 
     public TweetList(){
 
@@ -37,15 +36,12 @@ public class TweetList {
         return tweets.get(index);
     }
 
-    public ArrayList<Tweet> getTweets() {
-        tweetsTest = tweets;
-        Collections.sort(tweetsTest, new Comparator<Tweet>() {
+    public void getTweets() {
+        Collections.sort(tweets, new Comparator<Tweet>() {
             public int compare(Tweet lhs, Tweet rhs) {
                 return lhs.getDate().compareTo(rhs.getDate());
             }
         });
-        tweets = tweetsTest;
-        return tweetsTest;
     }
 
     public int getCount(){

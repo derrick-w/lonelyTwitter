@@ -54,7 +54,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         TimeUnit.SECONDS.sleep(3);
         list.add(tweet2);
         list.getTweets();
-        assertTrue(list.getTweet(0).getDate().before(list.getTweet(1).getDate()));
+        assertTrue(list.getTweet(1).getDate().compareTo(list.getTweet(0).getDate())==0);
     }
 
     public void testGetCount(){
