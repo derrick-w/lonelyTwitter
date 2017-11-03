@@ -9,7 +9,7 @@
         android:id="@+id/oldTweetsTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="My old tweets" />
+        android:text="@string/old_tweets" />
 
     <ListView
         android:id="@+id/oldTweetsList"
@@ -36,7 +36,7 @@
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clear" />
+        android:text="@string/clear" />
 
     <Button
         android:id="@+id/save"
